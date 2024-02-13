@@ -1,0 +1,115 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+    --font-size-p: 16px;
+    --font-fam: Work Sans;
+    --font-weight-1: 400;
+    --font-weight-2: 600;    
+    --font-weight-3: 700;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-pink);
+}
+body > img.design-img {
+    width: 100%;
+}
+body > main {
+    height: max-content;
+    width: 460px;
+    background-color: white;
+    position: absolute;
+    top: 25%;
+    border-radius: 15px;
+    padding: 33px 33px 0px 33px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.087);
+}
+main > div.faqs{
+    display: flex;
+    padding: 3px 0px 0px 0px;
+    margin: 0px 0px 33px 0px;
+}
+main > div.faqs > img.star{
+    transform: scale(0.9);
+}
+main > div.faqs > h1{
+    margin-left: 20px;
+    font-family: var(--font-fam);
+    font-weight: var(--font-weight-3);
+    font-size: xxx-large;
+}
+main > div.faq{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0px 0px 22px 4px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.091);
+    margin: 26px 0px 26px 0px;
+    transition: all ease-in-out 0.3s;
+}
+main > div.faq > section.heading{
+    display: block;
+}
+main > div.faq > section.heading > h2.question {
+    font-size: 15.7px;
+    font-family: var(--font-fam);
+    font-weight: var(--font-weight-2);
+    display: inline;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+    &:hover{
+        color: rgb(167, 37, 227);
+    }
+}
+main > div.faq > section.heading >  img.button{
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    right: 5px;
+    top: -5px;
+    cursor: pointer;
+}
+main > div.faq > p{
+    font-family: var(--font-fam);
+    font-size: 14px;
+    line-height: 1.5;
+    color: grey;
+    margin: 24px 0px 0px 0px;
+    
+    transition: all ease-in-out 0.3s;
+}
+.hidden {
+    display: none;
+}
+
+main > div.faq:last-child{
+    border: 0px;
+}
+
+@media only screen and (max-width: 414px){
+    body > main{
+        width: 68%;
+        border-radius: 8px;
+        height: calc(max-content + 100px);
+        position: absolute;
+        top: 14%;
+    }
+    main > div.faq > section.heading{
+        width: 35ch;
+        font-size: 12px;
+    }
+    main > div.faq > p{
+        font-size: 12px;
+    }
+}
