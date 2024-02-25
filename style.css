@@ -113,3 +113,6 @@ main > div.faq:last-child{
         font-size: 12px;
     }
 }
+::-webkit-scrollbar{
+    display: none;
+}
